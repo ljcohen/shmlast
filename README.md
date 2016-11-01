@@ -154,6 +154,21 @@ def task_lastal():
 There is an incompatibility between seaborn and matplotlib version 1.5.3. For that reason, the
 required matplotlib version is locked to 1.5.1.
 
+If you already have matplotlib > 1.5.1 installed (from a virtualenv):
+
+```
+pip install https://pypi.python.org/packages/source/m/matplotlib/matplotlib-1.5.1.tar.gz
+```
+
+Check that it worked:
+
+```
+python
+import matplotlib
+matplotlib.__version__
+quit()
+```
+
 ## References
 
 1. Aubry S, Kelly S, Kümpers BMC, Smith-Unna RD, Hibberd JM (2014) Deep Evolutionary Comparison of
